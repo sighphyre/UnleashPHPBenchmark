@@ -1,0 +1,32 @@
+{
+    "name": "simon/php",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Simon\\Php\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "sighphyre",
+            "email": "liquidwicked64@gmail.com"
+        }
+    ],
+    "require": {
+        "unleash/client": "*",
+        "guzzlehttp/guzzle": "^7.7",
+        "symfony/cache": "^6.3",
+        "league/flysystem": "^3.15"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../../unleash-client-php"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}
